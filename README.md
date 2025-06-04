@@ -1,4 +1,5 @@
-ESTRUCTURA A COPIAR:
+###  ESTRUCTURA A COPIAR:
+```
 └── 📁ObtenerSolucionesMicroservice.Domain.csproj
         └── ObtenerRelacionesDomain.cs
 └── 📁ObtenerSolucionesMicroservice.Entities
@@ -9,7 +10,7 @@ ESTRUCTURA A COPIAR:
         └── ObtenerRelacionesRepository.cs
 └── 📁ObtenerSolucionesMicroservice.Repository
         └── IObtenerRelacionesRepository.cs
-
+```
 
 ### ESTRUCTURA DEL PROYECTO EN GENERAL 
 ```
