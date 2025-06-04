@@ -1,0 +1,76 @@
+{
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.MSSqlServer" ],
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Warning",
+        "System": "Warning"
+      }
+    },
+    "WriteTo": [
+      {
+        "Name": "Console"
+      },
+      {
+        "Name": "MSSqlServer",
+        "Args": {
+          "connectionString": "Server=132.16.0.49;Database=BDDatos;User Id=Prueba;Password=Prueba;TrustServerCertificate=true;",
+          "tableName": "trilceLog",
+          "autoCreateSqlTable": true,
+          "columnOptionsSection": {
+            "additionalColumns": [
+              {
+                "ColumnName": "ActionName",
+                "DataType": "nvarchar",
+                "DataLength": 200
+              },
+              {
+                "ColumnName": "RequestId",
+                "DataType": "nvarchar",
+                "DataLength": 128
+              },
+              {
+                "ColumnName": "RequestPath",
+                "DataType": "nvarchar",
+                "DataLength": 1024
+              },
+              {
+                "ColumnName": "Application",
+                "DataType": "nvarchar",
+                "DataLength": 128
+              },
+              {
+                "ColumnName": "Environment",
+                "DataType": "nvarchar",
+                "DataLength": 128
+              },
+              {
+                "ColumnName": "Checked",
+                "DataType": "bit"
+              },
+              {
+                "ColumnName": "Payload",
+                "DataType": "nvarchar",
+                "DataLength": -1
+              },
+              {
+                "ColumnName": "Params",
+                "DataType": "nvarchar",
+                "DataLength": -1
+              },
+              {
+                "ColumnName": "Method",
+                "DataType": "nvarchar",
+                "DataLength": 16
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "Properties": {
+      "Application": "ObtenerSoluciones"
+    }
+  }
+}
