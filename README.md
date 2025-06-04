@@ -1,4 +1,17 @@
-### Project structure
+ESTRUCTURA A COPIAR:
+└── 📁ObtenerSolucionesMicroservice.Domain.csproj
+        └── ObtenerRelacionesDomain.cs
+└── 📁ObtenerSolucionesMicroservice.Entities
+        └── 📁DTOs
+            └── .empty
+            └── RelacionesDTO.cs
+└── 📁ObtenerSolucionesMicroservice.Infraestructure
+        └── ObtenerRelacionesRepository.cs
+└── 📁ObtenerSolucionesMicroservice.Repository
+        └── IObtenerRelacionesRepository.cs
+
+
+### ESTRUCTURA DEL PROYECTO EN GENERAL 
 ```
     └── ObtenerSoluciones.sln
     └── 📁ObtenerSolucionesMicroservice.Api
